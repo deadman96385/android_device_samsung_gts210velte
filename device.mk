@@ -25,5 +25,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
+# RIL
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    librilutils
+
 # Inherit from msm8976-common
 $(call inherit-product, device/samsung/msm8976-common/msm8976.mk)

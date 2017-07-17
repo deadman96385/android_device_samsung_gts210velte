@@ -24,6 +24,13 @@ TARGET_OTA_ASSERT_DEVICE := gts210velte
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
+# Telephony
+BOARD_RIL_CLASS := ../../../device/samsung/gts210velte/ril
+
+# RIL
+TARGET_RIL_VARIANT := caf
+BOARD_PROVIDES_LIBRIL := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := gts210velte_defconfig
 
