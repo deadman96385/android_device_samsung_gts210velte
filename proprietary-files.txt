@@ -1,3 +1,12 @@
+# ACBD Data
+etc/Bluetooth_cal.acdb
+etc/General_cal.acdb
+etc/Global_cal.acdb
+etc/Handset_cal.acdb
+etc/Hdmi_cal.acdb
+etc/Headset_cal.acdb
+etc/Speaker_cal.acdb
+
 # Sensors
 lib64/hw/sensors.msm8952.so
 vendor/lib64/libsensor1.so
